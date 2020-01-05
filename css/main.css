@@ -1,16 +1,22 @@
+
 /***** BASE STYLES *****/
-
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-color: #2b2b2b;
+    font-family: 'Questa', serif;
+    color: #ffffff;
 }
 
-
-#about, #work, #contact {
-    height: 600px;
+@font-face {
+  font-family: Questa;
+  src: url('../fonts/Questa_Regular-webfont.woff') format('woff');
 }
+
 
 /****** GRID *****/
+
+.container1 {
+    height: 400px;
+}
+
 .full-width {
     width: 1200px;
     margin: 0 auto;
@@ -26,164 +32,122 @@ color: #2b2b2b;
 	float: left;
 }
 
+
 /***** HEADER *****/
-header {
-    background: url("../img/hero.png");   
-    background-size: cover;
+
+header{
+	background: url("../img/hero-image.png"); 
+	background-size: cover;
     height: 800px;
 }
 
 header h1 {
-    color: #bbc085;
-    font-family: 'Lora', serif;
-    font-size: 30px;
+    clear: both;
+    color: #bdbf09;
+    font-family: 'Patua One', serif; 
+    font-size: 50px;
     font-weight: bold;
-    padding: 65px 0 65px 25px;
-    
+    line-height: 80px;
+    padding: 30px 0 0 200px;
+    text-align: center;
+    width: 1000px;
 }
+
+header p{
+	clear: both;
+    color: #095256;
+    font-family: 'Questa', serif;
+    font-size: 30px;
+    padding: 0px 0 20px 400px;
+    text-align: center;
+    width: 600px;
+}
+
 
 nav {
     float: right; 
-    padding: 75px 25px;
+    padding: 130px 55px;
+
 }
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 nav ul li a {
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #828282;
-    padding-left: 80px; 
+    font-size: 20px;
+    color: #095256;
+    padding-left: 60px; 
 }
 
-header h2 {
-    clear: both;
-    color: #9b9b9b;
-    font-family: 'Lora', serif; 
-    font-size: 72px;
-    line-height: 80px;
-    padding: 20px 0 20px 25px;
-    width: 1000px;
+
+/***** PORTFOLIO *****/
+#portfolio {
+    background-color: #ffffff;
 }
-header h2 span {
-    color: #2b2b2b;
+
+#portfolio h2 {
+    color: #095256;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+#portfolio img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#portfolio h3 {
+    color: #095256;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+#portfolio p {
+    color: #095256;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 /***** ABOUT *****/
 #about .full-width {
-    padding: 80px 0;
+    background-color: #087e8b;
 }
 
 #about h2 {
-	font-family: 'Lora', serif;
-	font-size: 36px;
-	padding-left: 50px;
-}
-
-#about p {
-	color: #a1a1a1;
-    font-size: 21px;
-	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 0px;
-}
-
-/***** WORK *****/
-
-#work {
-	background-color: #f9ceb7;
-	text-align: center;
-}
-
-#work .full-width {
-    padding: 115px 0;
-}
- 
-#work img {
-    padding-bottom: 30px;
-}
-
-#work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 0 auto;
-    width: 190px;
-}
- 
-#work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-align: center;
 }
 
 /***** CONTACT *****/
 #contact {
-	background-color: #ebebeb;
-}
-
-#contact .full-width {
-    padding: 110px 0;
-
-}
-
-#contact img#contact-img {
-    border: 12px solid #ffffff;
-    margin-left: 25px;
-}
-
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
+    background-color: #095156;
 }
 
 #contact h2 {
-    font-family: 'Lora', serif;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
     font-size: 36px;
-    line-height: 44px;
+    text-align: center;
 }
-#contact #email-header{
-    font-size: 32px;
-    font-weight: 400;
-    line-height:44px;
-    margin: -30px 0 5px 0;
-}
-#contact #socialmedia-header {
+
+#contact h3 {
+    color: #ffffff;
+    font-family: 'Roboto' sans-serif;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
+    text-align: center;
 }
-#contact a {
-    color: #c49075;
+
+#contact p {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 28px;
-    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
 }
-
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
