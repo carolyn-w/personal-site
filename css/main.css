@@ -1,35 +1,31 @@
 
-/***** BASE STYLES *****/
-body {
-    font-family: 'Questa', serif;
-    color: #ffffff;
-}
-
-@font-face {
-  font-family: Questa;
-  src: url('../fonts/Questa_Regular-webfont.woff') format('woff');
-}
-
-
 /****** GRID *****/
+
 
 .container1 {
     height: 400px;
+    width: 500px;
 }
 
+
 .full-width {
+    height: auto;
+    margin: auto;
+    overflow: auto;
     width: 1200px;
-    margin: 0 auto;
 }
 
 .half-width {
-	width: 600px;
 	float: left;
+    height: auto;
+    overflow: auto;
+    width: 600px;
 }
 
 .third-width {
-	width: 400px;
 	float: left;
+    height: auto;
+    width: 400px;
 }
 
 
@@ -44,46 +40,47 @@ header{
 header h1 {
     clear: both;
     color: #bdbf09;
-    font-family: 'Patua One', serif; 
+    font-family: 'Roboto Slab', serif; 
     font-size: 50px;
     font-weight: bold;
     line-height: 80px;
-    padding: 30px 0 0 200px;
     text-align: center;
-    width: 1000px;
-}
+    }
 
 header p{
 	clear: both;
     color: #095256;
-    font-family: 'Questa', serif;
-    font-size: 30px;
-    padding: 0px 0 20px 400px;
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 38px;
     text-align: center;
-    width: 600px;
-}
+   }
 
 
 nav {
     float: right; 
     padding: 130px 55px;
-
 }
+
 nav ul li {
     display: inline-block;
 }
+
 nav ul li a {
-    text-transform: lowercase;
-    text-decoration: none;
-    font-size: 20px;
     color: #095256;
-    padding-left: 60px; 
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    text-transform: lowercase; 
 }
 
 
 /***** PORTFOLIO *****/
 #portfolio {
     background-color: #ffffff;
+    margin: 50px;
+    overflow: auto;
+    width: 1200px;
 }
 
 #portfolio h2 {
@@ -91,43 +88,74 @@ nav ul li a {
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
     font-weight: bold;
-    text-align: center; 
-}
-
-#portfolio img {
-    padding-top: 30px;
+    margin-top: 0;
     padding-bottom: 30px;
+    text-align: center; 
 }
 
 #portfolio h3 {
     color: #095256;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto 700', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
+#portfolio img {
+    display: block;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 50px;
+    text-align: center;
 }
 
 #portfolio p {
     color: #095256;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto 400', sans-serif;
     font-size: 24px;
-    font-weight: normal;
+    margin-top: 0;
+    padding-top: 0;
+  
 }
 
 /***** ABOUT *****/
-#about .full-width {
-    background-color: #087e8b;
+#about {
+    background-color:#9AA9A5;
 }
 
+#about .container1 {
+    padding-bottom: 100px;
+   }
+
 #about h2 {
+    color: #ffffff;
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
     text-align: center;
 }
 
+#about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#about p {
+    color: #ffffff;
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 24px;
+  }
+
+
 /***** CONTACT *****/
 #contact {
-    background-color: #095156;
+    background-color: #4A4F47;
 }
 
 #contact h2 {
@@ -145,9 +173,47 @@ nav ul li a {
     text-align: center;
 }
 
-#contact p {
+
+#contact h3 {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
     font-size: 24px;
+    font-weight: bold;
     text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+#contact ul img {
+    padding-right: 48px;
+}
+
+#contact ul li {
+    display: inline-block;
+   }
+
+#contact p {
+    color: #ffffff;
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/***** FOOTER *****/
+#footer {
+    background-color: #4A4F47;
+}
+
+#footer p {
+    color: #ffffff;
+    font-family: 'Roboto 400',sans-serif ;
+    text-align: center;
+}
+
+#footer .full-width {
+    padding-top: 100px;
 }
