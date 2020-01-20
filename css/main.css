@@ -167,7 +167,7 @@ nav ul li a {
 
 #contact h3 {
     color: #ffffff;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -210,7 +210,7 @@ nav ul li a {
 
 #footer p {
     color: #ffffff;
-    font-family: 'Roboto 400',sans-serif ;
+    font-family: 'Roboto 400', sans-serif;
     text-align: center;
 }
 
